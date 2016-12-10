@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Django Girls</title>
+</head>
+<body>
+	
+		<a href=""><h1>DJANGO GIRLS BLOG</h1></a>
+	</div>
+	<section>
+		
+		
+		{% for articulo in mylist %}
+			<article>
+			<h2><a href=""> {{articulo.titulo}}</a></h2>
+			
+				<p>{{articulo.texto}}</p>
+				
+				<time>{{articulo.fecha_creacion}}</time>
+
+			</article>
+		{% endfor %}
+
+		
+
+
+	</section>
+
+</body>
+</html>
